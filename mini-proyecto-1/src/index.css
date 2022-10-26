@@ -1,0 +1,65 @@
+:root{
+    padding: 0;
+    margin:0;
+    background-color: #200000;
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+    background-repeat:repeat;
+font-family: Arial, Helvetica, sans-serif;
+color:beige
+}
+header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:rgba(102, 102, 102, 0.377) ;
+}
+header >h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#070707;
+    text-shadow: 1px 1px 2px rgb(255, 249, 168);
+}
+nav{
+    display: inline-flex;
+    justify-content: space-between;
+    gap:2rem;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+div>h1{
+    color: bisque;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    text-align: center;
+}
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color:rgb(99, 133, 113)
+}
+
+img{
+    width: 20rem;
+    border: 5px outset rgb(0, 0, 32);
+}
+#vinyls{
+    width: auto;
+    border: none;
+}
+
+li{
+    list-style: none;
+}
+p{
+    height: 7px;
+}
+h3{
+font-family: Arial, Helvetica, sans-serif;
+;
+}
