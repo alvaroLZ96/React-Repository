@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Song from "./Song";
+import { Link, Outlet } from "react-router-dom";
 
 const Music = () => {
   const [songsList, setSongsList] = useState([]);
@@ -15,10 +16,19 @@ const Music = () => {
 
   return (
     <>
-      <h1> SONGS 🎵</h1>
-      {songsList.map((song) => (
-        <Song key={song.id} item={song} />
-      ))}
+      <div>
+        <h1> SONGS 🎵</h1>
+        <ul>
+          {songsList.map((song) => (
+            <li key={song.id}>
+              <Link to={`/music/${song.id}`}>
+                <Song item={song} />
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <Outlet />
     </>
   );
 };
